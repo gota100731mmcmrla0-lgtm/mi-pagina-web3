@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Allyson Guadalupe Gomez Torres</title>
+    <style>
+        /* ==================== 5 ESTILOS CSS ==================== */
+        
+        /* 1. Base y fondo con degradado moderno */
+        body {
+            background: linear-gradient(135deg, rgb(127, 150, 255), #aquamarine);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background 0.5s ease;
+        }
+
+        /* 2. Contenedor principal estilizado como tarjeta */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 3. Galería de imágenes en cuadrícula (Flexbox/Grid adaptable) */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .image-gallery img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        /* Efecto Hover al pasar el mouse por las imágenes */
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 4. Tablas estilizadas y limpias */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th {
+            background-color: blueviolet;
+            color: white;
+            padding: 12px;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* 5. Botones y enlaces interactivos */
+        .btn-link {
+            display: inline-block;
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-link:hover {
+            background-color: #5d1f9a;
+        }
+        
+        .dark-mode {
+            background: #222 !important;
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+
+    <header>
+        <div class="image-gallery">
+            <img src="d:\IMG-20260603-WA0052.jpg" alt="alo" width="200" height="200">
+            <img src="d:\IMG-20260628-WA0062.jpg" alt="yo1" width="200" height="200">
+            <img src="d:\IMG20260731225447.jpg" alt="yo2" width="200" height="200">
+            <img src="d:\IMG-20260918-WA0064.jpg" alt="to3" width="200" height="200">
+        </div>
+
+        <button id="btnModo" style="padding: 10px; cursor: pointer; border-radius: 5px;"> Cambiar Modo</button>
+
+        <h1 style="color:blue; text-align: center;">Mis Gustos</h1>
+        
+        <nav style="text-align: center;">
+            <a class="btn-link" href="d:\ally\baileindex.html">Mi gusto por bailar</a>
+            <a class="btn-link" href="d:\ally\novioindex.html">Mi gusto por ver a mi novio</a>
+            <a class="btn-link" href="d:\ally\baileindex.html">Mi gusto por ir a bailes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <ol>
+                <li>Cantar</li>
+                <li>Ir a bailes</li>
+                <li>Dormir</li>
+                <li>Estar con mi hermana</li>
+                <li>Comer</li>
+
+                <li id="gustoNovio" style="cursor:pointer; color: #d91b5c; font-weight: bold;">Ver a mi novio (¡Hazme clic!)</li>
+                <li>Las rosas rojas</li>
+                <li>Estar con mi novio</li>
+                <li>Escuchar música</li>
+                <li>Salir</li>
+            </ol>
+        </section>
+
+        <!-- DATOS PERSONALES -->
+        <section style="background: #eee; padding: 15px; border-radius: 10px; margin: 20px 0;">
+            <p><strong>Nombre:</strong> <span id="txtNombre">Allyson</span></p>
+            <p><strong>Twitter:</strong> <i>@Allysita</i></p>
+            <p><strong>Correo:</strong> <u>goat001317mxmmmlar1</u></p>
+        </section>
+
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <img src="d:\IMG-20260917-WA6528 (1).jpg" alt="alo" width="300" height="300" style="border-radius: 50%;">
+        </div>
+
+        <!-- MISIÓN Y VISIÓN -->
+        <section style="text-align: center;">
+            <div style="background-color: #fff3cd; padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+                <h2 style="color:hsl(60, 39%, 25%); margin: 0;">Misión</h2>
+                <p>Soy una estudiante creativa y con muchas ganas de aprender más sobre mi carrera.</p>
+            </div>
+            <div style="background-color: #d1ecf1; padding: 15px; border-radius: 10px;">
+                <h2 style="color:hsl(22, 95%, 16%); margin: 0;">Visión</h2>
+                <p>En 5 años me veo con mis títulos en la mano, con un rancho, una camioneta negra, una moto roja y un carro.</p>
+            </div>
+        </section>
+
+        <!-- AMIGOS -->
+        <section>
+            <h2 style="color: #333; margin-top: 30px;">Mis 5 Amigos principales</h2>
+            <ul>
+                <li>Armando</li>
+                <li>Raúl</li>
+                <li>Rene</li>
+                <li>Yael</li>
+                <li>Aylin</li>
+            </ul>
+        </section>
+
+        <!-- TABLA: INFANCIA -->
+        <section>
+            <h2 style="font-size: 35px; color: blueviolet;">INFANCIA</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pamela</td>
+                        <td><img src="d:\IMG-20260603-WA0052.jpg" alt="Pamela" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Aylin</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Armando</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Emilio</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TABLA: SECUNDARIA -->
+        <section>
+            <h2 style="font-size: 35px; color: blueviolet;">SECUNDARIA</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aylin</td>
+                        <td><img src="d:\IMG-20261005-WA0030.jpg" alt="Aylin" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Emilio</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nicolas</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Julieta</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>María</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TABLA: PREPARATORIA -->
+        <section>
+            <h2 style="font-size: 35px; color: blueviolet;">PREPARATORIA</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Armando</td>
+                        <td><img src="d:\IMG-20261005-WA0030.jpg" alt="Armando" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Raúl</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rene</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Yael</td>
+                        <td>Sin Imagen</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Rafael</td>
+                        <td>Sin Imagen</td>
+
+
+    <!-- ==================== 5 FUNCIONES JAVASCRIPT ==================== -->
+    <script>
+        // 1. Cambiar entre Modo Oscuro y Modo Claro
+        const btnModo = document.getElementById('btnModo');
+        btnModo.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            // Cambia el texto del botón según el modo activo
+            if (document.body.classList.contains('dark-mode')) {
+                btnModo.textContent = 'Cambiar a Modo Claro';
+            } else {
+                btnModo.textContent = 'Cambiar Modo';
+            }
+        });
+
+        // 2. Alerta interactiva y romántica al hacer clic en "Ver a mi novio"
+        const gustoNovio = document.getElementById('gustoNovio');
+        gustoNovio.addEventListener('click', () => {
+            alert('❤️ ¡Pasar tiempo con mi novio es lo mejor del mundo! ❤️');
+        });
+
+        // 3. Efecto de bienvenida personalizado basado en el nombre del perfil
+        window.addEventListener('DOMContentLoaded', () => {
+            const nombre = document.getElementById('txtNombre').textContent;
+            console.log(`¡Bienvenido al sitio web de ${nombre}!`);
+        });
+
+        // 4. Animación interactiva en los títulos de las secciones al pasar el mouse
+        const titulosTablas = document.querySelectorAll('main h2');
+        titulosTablas.forEach(titulo => {
+            titulo.style.transition = 'letter-spacing 0.3s ease, color 0.3s ease';
+            
+            titulo.addEventListener('mouseenter', () => {
+                titulo.style.letterSpacing = '4px';
+                titulo.style.color = '#d91b5c';
+            });
+            
+            titulo.addEventListener('mouseleave', () => {
+                titulo.style.letterSpacing = 'normal';
+                titulo.style.color = 'blueviolet';
+            });
+        });
+
+        // 5. Contador dinámico de amigos en la lista principal
+        const listaAmigos = document.querySelectorAll('section ul li');
+        const seccionAmigos = document.querySelector('section h2');
+        if (seccionAmigos && listaAmigos.length > 0) {
+            seccionAmigos.textContent = `Mis ${listaAmigos.length} Amigos principales (¡Conectados!)`;
+        }
+    </script>
+</body>
+
+
+
+
+                    </tr>
+                </tbody>
+
+
